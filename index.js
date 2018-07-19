@@ -64,7 +64,7 @@ function copyTextUsingDOM (str) {
   tempElem.setAttribute('style', '-webkit-user-select: text !important')
 
   // Use shadow DOM if available.
-  let spanParent: Node = tempElem
+  let spanParent = tempElem
   if (tempElem.attachShadow) {
     spanParent = tempElem.attachShadow({ mode: 'open' })
   }
