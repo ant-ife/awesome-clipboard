@@ -1,0 +1,27 @@
+{
+  "name": "awesome-clipboard",
+  "version": "1.0.0",
+  "description": "simple clipboard for web app",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./index.js --fix",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ant-ife/awesome-clipboard.git"
+  },
+  "keywords": [
+    "clipboard"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ant-ife/awesome-clipboard/issues"
+  },
+  "homepage": "https://github.com/ant-ife/awesome-clipboard#readme",
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-antife": "^1.0.2"
+  }
+}
