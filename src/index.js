@@ -11,7 +11,7 @@ module.exports = class Clipboard {
    * @return {Primise<boolean>}
    */
   static write (text) {
-    return (new Promise((resolve, reject) => {
+    return (new Promise(resolve => {
       copySuccess = false
 
       const listener = copyListener.bind(this, text)
@@ -27,10 +27,7 @@ module.exports = class Clipboard {
         copySuccess = copyTextUsingDOM(text)
       }
 
-      if (copySuccess) {
-        resolve(copySuccess)
-        return
-      }
+      resolve(!!copySuccess)
     }))
   }
 }
