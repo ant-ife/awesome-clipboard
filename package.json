@@ -1,11 +1,14 @@
 {
   "name": "awesome-clipboard",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "simple clipboard for web app",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "lint": "eslint ./index.js --fix",
-    "test": ""
+    "babel": "babel ./src --out-dir ./lib",
+    "dev": "babel ./src --watch --out-dir ./lib",
+    "lint": "eslint src --fix",
+    "test": "npm run lint",
+    "prepublishOnly": "npm run babel"
   },
   "repository": {
     "type": "git",
@@ -14,13 +17,20 @@
   "keywords": [
     "clipboard"
   ],
-  "author": "",
+  "engines": {
+    "node": "8"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ant-ife/awesome-clipboard/issues"
   },
   "homepage": "https://github.com/ant-ife/awesome-clipboard#readme",
   "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/runtime": "^7.0.0",
     "eslint": "^5.1.0",
     "eslint-config-antife": "^1.0.2"
   }
