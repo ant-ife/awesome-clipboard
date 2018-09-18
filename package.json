@@ -1,8 +1,8 @@
 {
   "name": "awesome-clipboard",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "simple clipboard for web app",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "babel": "babel ./src --out-dir ./lib",
     "dev": "babel ./src --watch --out-dir ./lib",
@@ -14,6 +14,9 @@
     "type": "git",
     "url": "git+https://github.com/ant-ife/awesome-clipboard.git"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "clipboard"
   ],
