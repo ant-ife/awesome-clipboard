@@ -17,3 +17,7 @@ document.getElementById('element').addEventListener('click', () => {
   })
 }, true)
 ```
+
+# Known issue
+
+- UC browser is not supported, even if you want try [clipboard.js](https://github.com/zenorocha/clipboard.js/issues/379)
