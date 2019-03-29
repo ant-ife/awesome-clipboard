@@ -21,7 +21,7 @@
     "clipboard"
   ],
   "engines": {
-    "node": "8"
+    "node": ">=8"
   },
   "license": "MIT",
   "bugs": {
