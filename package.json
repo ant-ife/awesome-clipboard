@@ -1,6 +1,6 @@
 {
   "name": "awesome-clipboard",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "simple clipboard for web app",
   "main": "lib/index.js",
   "scripts": {
