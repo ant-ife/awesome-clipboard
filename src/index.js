@@ -58,6 +58,9 @@ function copyListener (text, e) {
  * @return {Boolean}
  */
 function copyTextUsingDOM (str) {
+  // https://caniuse.com/#search=execCommand not support execCommand
+  if (typeof document.execCommand !== 'function') return false
+
   const tempElem = document.createElement('div')
   // Setting an individual property does not support `!important`, so we set the
   // whole style instead of just the `-webkit-user-select` property.
